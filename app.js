@@ -29,3 +29,15 @@ test(b);
 function add(a,b){
     console.log(x + y);
 }
+function getBMI(x, y) {
+    return 20;
+}
+
+function check(x,y){
+    if (x === "horse") {
+        console.log("that is true");
+    } else {
+        conaole.log("that is false")
+    } 
+}
+check("horsey");

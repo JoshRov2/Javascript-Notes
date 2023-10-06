@@ -37,7 +37,7 @@ function check(x,y){
     if (x === "horse") {
         console.log("that is true");
     } else {
-        conaole.log("that is false")
+        console.log("that is false")
     } 
 }
 check("horsey");

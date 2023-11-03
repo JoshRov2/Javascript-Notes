@@ -50,18 +50,27 @@ DOMselectors.h2s.forEach(
 /* define the amount of occupied spaces through a let or const, as N. N is the total amount of parking spaces.
  */
 // "C" is an occupied space.
-// "." is an empty space.
-let y = "[C][C][.][C][.][C]"
-let t = "[C][.][.][.[C][C]"
-function spaces(s, y, t){
-    let total = 0;
-    for(let i = 0; i <= s; i++){
-        if(y[i] === "C" && t[i] === "C"){
-            total++;
+// // "." is an empty s/* pace.
+// let y = "[C][C][.][C][.][C]"
+// let t = "[C][.][.][.[C][C]"
+// function spaces(s, y, t){
+//     let total = 0;
+//     for(let i = 0; i <= s; i++){
+//         if(y[i] === "C" && t[i] === "C"){
+//             total++;
+//         }
+//     }
+//     console.log(total);
+// } */
+// spaces(7, "CCCCCCC", "C.C.C.C");
+// N represents the amount of spaces available yesterday and today, so it will be used twice.
+let prev = 0;
+let current = 1;
+function fibo(prev, current, next){
+    for (let i = 2; i <= prev; i++){
+            next = current + prev;
+            prev = current;
+            current = next;
+            console.log(current);
         }
     }
-    console.log(total);
-}
-spaces(7, "CCCCCCC", "C.C.C.C");
-// N represents the amount of spaces available yesterday and today, so it will be used twice.
-

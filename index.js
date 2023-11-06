@@ -74,3 +74,4 @@ function fibo(prev, current, next){
             console.log(current);
         }
     }
+return(current);

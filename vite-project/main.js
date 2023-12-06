@@ -14,7 +14,7 @@ Aaron.then((result)=>{
 }); */
 
 //REST API
-const URL = `https://api.quotable.io/random`;
+const URL = `https://moviequote.onrender.com/`;
 async function getData(URL){
   try {
     const response = await fetch(URL);

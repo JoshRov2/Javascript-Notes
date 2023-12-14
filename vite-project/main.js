@@ -31,3 +31,41 @@ async function getData(URL){
   }
 };
 getData(URL);
+
+const dennis = {
+  name: "Dennis", //string
+  age: 16, //integer
+};
+let x = Array.from(dennis.name);
+console.log(x);
+for(let i = 0; i< dennis.name.length; i++){
+  console.log(dennis.name[i]);
+}
+console.log(12 + Number("13"))//string, add number to operate
+console.log(dennis.name);
+
+function needle(name, search){
+  if(name.includes(search)){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(needle(dennis.name, "d"));
+
+function sortString(name){
+  let x = [...name].sort();
+  console.log(x)
+}
+sortString("QWERTYUIOPASDFGHJKLZXCVBNM");
+let a = [1, 2, 3];
+let y = [4, 5, 6];
+let z = {...a, ...y};
+a = [...a, ...y]
+console.log(z);
+
+function removeL(name) {
+  let x = Array.from(name);
+  x.splice(-1);
+  console.log(x);
+}
